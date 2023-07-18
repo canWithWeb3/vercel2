@@ -4,6 +4,6 @@ const port = 3000
 
 const userRoutes = require("./routes/user")
 
-app.get(userRoutes)
+app.use(userRoutes)
 
 app.listen(port, () => console.log(`Server listening on port: ${port}`))
